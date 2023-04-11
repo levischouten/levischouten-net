@@ -7,9 +7,9 @@ export default function Home() {
     <Layout>
       <div className="max-w-lg mx-auto grid grid-cols-1 gap-12">
         <motion.section
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          initial={{ translateX: "-10px", opacity: 0 }}
+          whileInView={{ translateX: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
           className="grid grid-cols-1 gap-12"
         >
           <div className="grid grid-cols-1 gap-4">
@@ -47,9 +47,9 @@ export default function Home() {
           <hr className="m-auto w-3/4 border-slate-300" />
         </motion.section>
         <motion.section
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          initial={{ translateX: "-10px", opacity: 0 }}
+          whileInView={{ translateX: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
           className="grid grid-cols-1 gap-12"
         >
           <div className="grid grid-cols-1 gap-4">

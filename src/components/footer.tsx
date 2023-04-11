@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <motion.footer
-      animate={{ opacity: 1 }}
-      initial={{ opacity: 0 }}
-      transition={{ duration: 1 }}
-      className="grid grid-cols-1 gap-4"
-    >
-      <div className="grid grid-cols-1 gap-16">
+    <footer className="grid grid-cols-1 gap-4">
+      <motion.div
+        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+        className="grid grid-cols-1 gap-16"
+      >
         <div className="grid grid-cols-1 mx-auto max-w-sm gap-4">
           <p className="text-center text-lg font-medium">
             Mollit incididunt ex proident amet velit fugiat magna occaecat et id
@@ -30,11 +30,11 @@ export default function Footer() {
           <Link href="github">Github</Link>
           <Link href="gitlab">Gitlab</Link>
         </div>
-      </div>
+      </motion.div>
       <hr className="m-auto w-2/3 border-slate-300" />
       <p className="mx-auto text-slate-500 text-sm">
         Copyright © Levi Schouten
       </p>
-    </motion.footer>
+    </footer>
   );
 }
