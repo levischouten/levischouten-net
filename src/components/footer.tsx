@@ -32,7 +32,9 @@ export default function Footer() {
         </div>
       </div>
       <hr className="m-auto w-2/3 border-slate-300" />
-      <p className="mx-auto text-slate-500">Copyright © Levi Schouten</p>
+      <p className="mx-auto text-slate-500 text-sm">
+        Copyright © Levi Schouten
+      </p>
     </motion.footer>
   );
 }
