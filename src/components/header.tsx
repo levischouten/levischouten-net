@@ -35,7 +35,9 @@ export default function Header() {
                 className="rounded-full"
               />
               <div>
-                <h1 className="text-3xl font-semibold mb-2">Levi Schouten</h1>
+                <h1 className="text-3xl font-semibold mb-2 text-black">
+                  Levi Schouten
+                </h1>
                 <div className="flex gap-4">
                   <Image
                     src={TwitterIcon}
