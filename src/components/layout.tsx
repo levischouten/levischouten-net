@@ -9,9 +9,9 @@ export default function Layout(props: Props) {
   const { children } = props;
 
   return (
-    <div className="m-auto h-screen max-w-4xl  px-8 py-4">
+    <div className="grid grid-rows-[auto_1fr_auto] grid-cols-1 gap-16 mx-auto max-w-4xl px-12 py-8 h-screen">
       <Header />
-      {children}
+      <main>{children}</main>
       <Footer />
     </div>
   );
