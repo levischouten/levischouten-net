@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout showBanner>
       <div className="max-w-lg mx-auto grid grid-cols-1 gap-12">
         <motion.section
           initial={{ translateX: "-10px", opacity: 0 }}
