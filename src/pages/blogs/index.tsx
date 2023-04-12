@@ -4,6 +4,7 @@ import { parseISO, format } from "date-fns";
 import { InferGetStaticPropsType } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Blogs({
   blogs,
@@ -12,7 +13,13 @@ export default function Blogs({
     <Layout showBanner title="Levi Schouten | Blogs">
       {blogs.map((blog) => {
         return (
-          <div className="grid grid-cols-1 gap-12 p-8" key={blog.slug}>
+          <motion.div
+            initial={{ translateX: "-10px", opacity: 0 }}
+            whileInView={{ translateX: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="grid grid-cols-1 gap-12 p-8"
+            key={blog.slug}
+          >
             <Link href={`blogs/${blog.slug}`}>
               <div className="grid grid-cols-4 items-center">
                 <div className="grid grid-cols-1 gap-4 col-span-3">
@@ -32,7 +39,7 @@ export default function Blogs({
               </div>
             </Link>
             <hr className="m-auto w-full border-slate-300" />
-          </div>
+          </motion.div>
         );
       })}
     </Layout>

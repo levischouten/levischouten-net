@@ -7,6 +7,7 @@ import TwitterIcon from "@/assets/twitter.svg";
 import InstagramIcon from "@/assets/instagram.svg";
 import LinkedinIcon from "@/assets/linkedin.svg";
 import Head from "next/head";
+import { motion } from "framer-motion";
 
 type Props = {
   title?: string;
@@ -25,7 +26,6 @@ export default function Header(props: Props) {
         <div className="flex justify-end">
           <nav className="flex gap-4">
             <Link href="/">Home</Link>
-            <Link href="/projects">Projects</Link>
             <Link href="/blogs">Blogs</Link>
             <Link href="/contact">Contact</Link>
           </nav>
@@ -33,7 +33,12 @@ export default function Header(props: Props) {
 
         {showBanner && (
           <div className="grid grid-cols-1 gap-12">
-            <div className="grid grid-cols-2">
+            <motion.div
+              initial={{ translateY: "-10px", opacity: 0 }}
+              whileInView={{ translateY: 0, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="grid grid-cols-2"
+            >
               <div className="flex gap-4 items-center">
                 <Image
                   src={profileImage}
@@ -78,7 +83,7 @@ export default function Header(props: Props) {
                 lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam sicing elit. Quisquam
               </p>
-            </div>
+            </motion.div>
 
             <hr className="m-auto w-2/3 border-slate-300" />
           </div>
