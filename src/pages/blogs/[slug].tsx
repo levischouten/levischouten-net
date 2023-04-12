@@ -5,6 +5,7 @@ import type { InferGetStaticPropsType } from "next";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { format, parseISO } from "date-fns";
 
 export default function Blog({
   blog,
@@ -23,11 +24,13 @@ export default function Blog({
           className="grid grid-cols-1 gap-16"
         >
           <header className="grid grid-cols-2">
-            <div>
+            <div className="grid grid-cols-1 gap-4">
               <h1 className="text-2xl font-bold">{blog.title}</h1>
-              <p className="text-slate-400">{blog.date}</p>
+              <time className="text-slate-500" dateTime={blog.date}>
+                {format(parseISO(blog.date), "LLLL d, yyyy")}
+              </time>
             </div>
-            <p>{blog.excerpt}</p>
+            <p className="flex items-center">{blog.excerpt}</p>
           </header>
           <hr className="m-auto w-2/3 border-slate-300" />
           <div className="max-w-2xl mx-auto">
@@ -90,13 +93,13 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllBlogs(["slug"]);
+  const blogs = getAllBlogs(["slug"]);
 
   return {
-    paths: posts.map((post) => {
+    paths: blogs.map((blog) => {
       return {
         params: {
-          slug: post.slug,
+          slug: blog.slug,
         },
       };
     }),
