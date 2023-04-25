@@ -100,10 +100,12 @@ export default function Header(props: Props) {
                   </div>
                 </div>
               </div>
-              <p className="max-w-sm flex items-center">{introText}</p>
+              <p className="max-w-sm flex items-center text-slate-900">
+                {introText}
+              </p>
             </motion.div>
 
-            <hr className="m-auto w-2/3 border-slate-300" />
+            {/* <hr className="m-auto w-2/3 border-slate-300" /> */}
           </div>
         )}
       </header>
