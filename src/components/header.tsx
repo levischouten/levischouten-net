@@ -53,30 +53,50 @@ export default function Header(props: Props) {
                     Levi Schouten
                   </h1>
                   <div className="flex gap-4">
-                    <Image
-                      src={TwitterIcon}
-                      alt="Twitter icon"
-                      width={20}
-                      height={20}
-                    />
-                    <Image
-                      src={InstagramIcon}
-                      alt="Instagram icon"
-                      width={20}
-                      height={20}
-                    />
-                    <Image
-                      src={LinkedinIcon}
-                      alt="Linkedin icon"
-                      width={20}
-                      height={20}
-                    />
-                    <Image
-                      src={GithubIcon}
-                      alt="Github icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Link
+                      href="https://twitter.com/levischoute"
+                      target="_blank"
+                    >
+                      <Image
+                        src={TwitterIcon}
+                        alt="Twitter icon"
+                        width={20}
+                        height={20}
+                      />
+                    </Link>
+                    <Link
+                      href="https://www.instagram.com/levischouten__/"
+                      target="_blank"
+                    >
+                      <Image
+                        src={InstagramIcon}
+                        alt="Instagram icon"
+                        width={20}
+                        height={20}
+                      />
+                    </Link>
+                    <Link
+                      href="https://www.linkedin.com/in/levi-schouten-3094181a2/"
+                      target="_blank"
+                    >
+                      <Image
+                        src={LinkedinIcon}
+                        alt="Linkedin icon"
+                        width={20}
+                        height={20}
+                      />
+                    </Link>
+                    <Link
+                      href="https://github.com/levischouten"
+                      target="_blank"
+                    >
+                      <Image
+                        src={GithubIcon}
+                        alt="Github icon"
+                        width={20}
+                        height={20}
+                      />
+                    </Link>
                   </div>
                 </div>
               </div>

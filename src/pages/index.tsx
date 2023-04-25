@@ -28,7 +28,7 @@ export default function Home({
                   className="grid grid-cols-1 gap-12 p-8"
                 >
                   <Link href={`blogs/${blog.slug}`}>
-                    <div className="grid grid-cols-4 items-center">
+                    <div className="grid grid-cols-4 gap-4 items-center">
                       <div className="grid grid-cols-1 gap-4 col-span-4 sm:col-span-3">
                         <h2 className="font-bold text-lg">{blog.title}</h2>
                         <p>{blog.excerpt}</p>

@@ -28,15 +28,36 @@ export default function Footer(props: Props) {
           </div>
         )}
         <div className="grid grid-rows-3 sm:grid-rows-2 grid-flow-col gap-x-8 m-auto">
-          <Link href="resources">Resources</Link>
-          <Link href="tools">Tools</Link>
-          <Link href="resume">Resume</Link>
-          <Link href="projects">Projects</Link>
-          <Link href="instagram">Instagram</Link>
-          <Link href="twitter">Twitter</Link>
-          <Link href="linkedin">Linkedin</Link>
-          <Link href="github">Github</Link>
-          <Link href="gitlab">Gitlab</Link>
+          <Link href="resources" target="_blank">
+            Resources
+          </Link>
+          <Link href="tools" target="_blank">
+            Tools
+          </Link>
+          <Link href="resume.levischouten.net" target="_blank">
+            Resume
+          </Link>
+          <Link
+            href="https://www.instagram.com/levischouten__/"
+            target="_blank"
+          >
+            Instagram
+          </Link>
+          <Link href="https://twitter.com/levischoute" target="_blank">
+            Twitter
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/levi-schouten-3094181a2/"
+            target="_blank"
+          >
+            Linkedin
+          </Link>
+          <Link href="https://github.com/levischouten" target="_blank">
+            Github
+          </Link>
+          <Link href="https://gitlab.com/levischoute" target="_blank">
+            Gitlab
+          </Link>
         </div>
       </motion.div>
       <hr className="m-auto w-2/3 border-slate-300" />
