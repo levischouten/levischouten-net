@@ -2,7 +2,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 type Props = {
-  showContact: boolean;
+  showContact?: boolean;
 };
 
 export default function Footer(props: Props) {
@@ -27,7 +27,7 @@ export default function Footer(props: Props) {
             </button>
           </div>
         )}
-        <div className="grid grid-rows-2 grid-flow-col gap-x-8 m-auto">
+        <div className="grid grid-rows-3 sm:grid-rows-2 grid-flow-col gap-x-8 m-auto">
           <Link href="resources">Resources</Link>
           <Link href="tools">Tools</Link>
           <Link href="resume">Resume</Link>
