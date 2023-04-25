@@ -58,17 +58,6 @@ type Params = {
   };
 };
 
-type Blog = {
-  title: string;
-  date: string;
-  slug: string;
-  author: string;
-  content: string;
-  ogImage: string;
-  coverImage: string;
-  excerpt: string;
-};
-
 export async function getStaticProps({ params }: Params) {
   const blog = getBlogBySlug(params.slug, [
     "title",
@@ -79,7 +68,7 @@ export async function getStaticProps({ params }: Params) {
     "ogImage",
     "coverImage",
     "excerpt",
-  ]) as Blog; // TODO: Remove type assertion
+  ]);
   const content = await markdownToHtml(blog.content || "");
 
   return {

@@ -46,22 +46,8 @@ export default function Blogs({
   );
 }
 
-type Blog = {
-  title: string;
-  date: string;
-  slug: string;
-  excerpt: string;
-  coverImage: string;
-};
-
 export async function getStaticProps() {
-  const blogs = getAllBlogs([
-    "slug",
-    "excerpt",
-    "title",
-    "date",
-    "coverImage",
-  ]) as Blog[]; // TODO: Remove type assertion
+  const blogs = getAllBlogs(["slug", "excerpt", "title", "date", "coverImage"]);
 
   return {
     props: {

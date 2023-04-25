@@ -57,14 +57,6 @@ export default function Home({
   );
 }
 
-type Blog = {
-  title: string;
-  date: string;
-  slug: string;
-  excerpt: string;
-  coverImage: string;
-};
-
 export async function getStaticProps() {
   const blogs = getAllBlogs([
     "slug",
@@ -72,7 +64,7 @@ export async function getStaticProps() {
     "title",
     "date",
     "coverImage",
-  ]).slice(0, 3) as Blog[]; // TODO: Remove type assertion
+  ]).slice(0, 3);
 
   return {
     props: {
