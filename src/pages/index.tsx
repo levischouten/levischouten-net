@@ -29,7 +29,7 @@ export default function Home({
                     className="grid grid-cols-1 gap-12 sm:px-8"
                   >
                     <Link href={`blogs/${blog.slug}`}>
-                      <div className="grid grid-cols-4 gap-4 items-center">
+                      <div className="relative grid grid-cols-4 gap-4 items-center">
                         <div className="grid grid-cols-1 gap-4 col-span-4 sm:col-span-3">
                           <h2 className="font-bold text-lg">{blog.title}</h2>
                           <p>{blog.excerpt}</p>
@@ -44,6 +44,10 @@ export default function Home({
                           height={1000}
                           className="object-cover col-span-4 sm:col-span-1 sm:h-3/4"
                         />
+                        <motion.div
+                          whileHover={{ left: "125%" }}
+                          className="z-5 absolute -inset-full top-0 block h-full w-1/2 -skew-x-12 transform bg-red-200 bg-gradient-to-r from-transparent to-white opacity-40"
+                        ></motion.div>
                       </div>
                     </Link>
                     <hr className="m-auto w-full border-slate-300" />
