@@ -5,7 +5,7 @@ coverImage: "/assets/blogs/a-deep-dive-into-the-tech-stack-of-my-personal-websit
 date: "2023-04-25"
 ---
 
-I'm excited to announce the launch of my [personal website](https://levischouten-net.vercel.app), and for my first blog post, I want to walk you through the technology stack that I used to build it.
+I'm excited to announce the launch of my [personal website](https://levischouten.net), and for my first blog post, I want to walk you through the technology stack that I used to build it.
 
 The main purpose of my website is to publish content, primarily blogs at the moment. To ensure good SEO and performance, I needed a framework that could handle static site generation. After some research, I chose [Next.js](https://nextjs.org/), a React-based framework, due to its excellent features, good documentation, and easy integration with [Vercel](https://vercel.com/), my hosting platform of choice.
 

@@ -33,7 +33,7 @@ export default function Blog({
             <p className="flex items-center">{blog.excerpt}</p>
           </header>
           <hr className="m-auto w-2/3 border-slate-300" />
-          <div className="max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 gap-8 max-w-2xl mx-auto">
             <Image
               src={blog.coverImage}
               alt="Cover image"
