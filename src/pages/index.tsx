@@ -12,7 +12,7 @@ export default function Home({
   return (
     <Layout
       showBanner
-      introText="With a passion for building modern and intuitive web applications, I'm a fullstack developer who specializes in bringing your ideas to life."
+      introText="I'm a fullstack developer with a passion for building modern and intuitive web applications, who specializes in bringing your ideas to life."
     >
       <div className="grid grid-cols-1 gap-12">
         <section className="grid grid-cols-1 gap-8">
