@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "blog:create": "bash ./scripts/create-blog.sh"
   },
   "dependencies": {
     "@types/node": "18.15.11",
