@@ -20,7 +20,7 @@ export default function Blogs({
           return (
             <motion.div
               initial={{ translateX: "-10px", opacity: 0 }}
-              whileInView={{ translateX: 0, opacity: 1 }}
+              animate={{ translateX: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
               className="grid grid-cols-1 gap-12 sm:px-8"
               key={blog.slug}

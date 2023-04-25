@@ -11,7 +11,7 @@ export default function Footer(props: Props) {
   return (
     <footer className="grid grid-cols-1 gap-4">
       <motion.div
-        whileInView={{ opacity: 1 }}
+        animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
         className="grid grid-cols-1 gap-16"
