@@ -23,7 +23,7 @@ export default function Blog({
           transition={{ duration: 0.5 }}
           className="grid grid-cols-1 gap-16"
         >
-          <header className="grid grid-cols-2">
+          <header className="grid gap-4 sm:grid-cols-2 grid-cols-1">
             <div className="grid grid-cols-1 gap-4">
               <h1 className="text-2xl font-bold">{blog.title}</h1>
               <time className="text-slate-500" dateTime={blog.date}>

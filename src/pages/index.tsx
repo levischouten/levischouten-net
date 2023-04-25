@@ -10,7 +10,10 @@ export default function Home({
   blogs,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <Layout showBanner>
+    <Layout
+      showBanner
+      introText="With a passion for building modern and intuitive web applications, I'm a fullstack developer who specializes in bringing your ideas to life."
+    >
       <div className="grid grid-cols-1 gap-12">
         <section className="grid grid-cols-1 gap-8">
           <div className="grid grid-cols-1 gap-4">

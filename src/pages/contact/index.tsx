@@ -3,7 +3,11 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <Layout title="Contact" showBanner>
+    <Layout
+      title="Contact"
+      showBanner
+      introText="I'm excited to hear about your project and see how I can help bring your ideas to life. Let's work together to make your vision a reality."
+    >
       <motion.form
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}

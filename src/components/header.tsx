@@ -11,11 +11,12 @@ import { motion } from "framer-motion";
 
 type Props = {
   title?: string;
+  introText?: string;
   showBanner?: boolean;
 };
 
 export default function Header(props: Props) {
-  const { title, showBanner } = props;
+  const { title, showBanner, introText } = props;
 
   return (
     <>
@@ -79,10 +80,7 @@ export default function Header(props: Props) {
                   </div>
                 </div>
               </div>
-              <p className="max-w-sm flex items-center">
-                lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam sicing elit. Quisquam
-              </p>
+              <p className="max-w-sm flex items-center">{introText}</p>
             </motion.div>
 
             <hr className="m-auto w-2/3 border-slate-300" />
