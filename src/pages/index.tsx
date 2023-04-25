@@ -17,7 +17,7 @@ export default function Home({
       <div className="grid grid-cols-1 gap-12">
         <section className="grid grid-cols-1 gap-8">
           <div className="grid grid-cols-1 gap-4">
-            <h2 className="font-bold text-xl px-8">Latest blogs</h2>
+            <h2 className="font-bold text-xl sm:px-8">Latest blogs</h2>
             {blogs.map((blog) => {
               return (
                 <motion.div
@@ -25,7 +25,7 @@ export default function Home({
                   initial={{ translateX: "-10px", opacity: 0 }}
                   whileInView={{ translateX: 0, opacity: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="grid grid-cols-1 gap-12 p-8"
+                  className="grid grid-cols-1 gap-12 sm:p-8"
                 >
                   <Link href={`blogs/${blog.slug}`}>
                     <div className="grid grid-cols-4 gap-4 items-center">

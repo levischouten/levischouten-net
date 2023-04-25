@@ -36,7 +36,7 @@ export default function Header(props: Props) {
           <div className="grid grid-cols-1 gap-12 mx-auto">
             <motion.div
               initial={{ translateY: "-10px", opacity: 0 }}
-              whileInView={{ translateY: 0, opacity: 1 }}
+              animate={{ translateY: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
               className="grid grid-cols-1 gap-4 sm:grid-cols-2"
             >

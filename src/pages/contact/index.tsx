@@ -12,7 +12,7 @@ export default function Contact() {
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
-        className="grid grid-cols-1 gap-4 p-8"
+        className="grid grid-cols-1 gap-4 sm:p-8"
       >
         <input
           className="border-slate-500 border-2 p-4 rounded-md"

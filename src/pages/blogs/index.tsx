@@ -21,7 +21,7 @@ export default function Blogs({
             initial={{ translateX: "-10px", opacity: 0 }}
             whileInView={{ translateX: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 gap-12 p-8"
+            className="grid grid-cols-1 gap-12 sm:p-8"
             key={blog.slug}
           >
             <Link href={`blogs/${blog.slug}`}>
