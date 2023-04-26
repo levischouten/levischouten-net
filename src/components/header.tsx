@@ -8,6 +8,7 @@ import InstagramIcon from "@/assets/instagram.svg";
 import LinkedinIcon from "@/assets/linkedin.svg";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 type Props = {
   title?: string;
@@ -18,6 +19,8 @@ type Props = {
 export default function Header(props: Props) {
   const { title, showBanner, introText } = props;
 
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -26,9 +29,24 @@ export default function Header(props: Props) {
       <header className="grid grid-cols-1 gap-24">
         <div className="flex sm:justify-end justify-center">
           <nav className="flex gap-4">
-            <Link href="/">Home</Link>
-            <Link href="/blogs">Blogs</Link>
-            <Link href="/contact">Contact</Link>
+            <Link
+              className={router.pathname === "/" ? "font-bold" : ""}
+              href="/"
+            >
+              Home
+            </Link>
+            <Link
+              className={router.pathname === "/blogs" ? "font-bold" : ""}
+              href="/blogs"
+            >
+              Blogs
+            </Link>
+            <Link
+              className={router.pathname === "/contact" ? "font-bold" : ""}
+              href="/contact"
+            >
+              Contact
+            </Link>
           </nav>
         </div>
 

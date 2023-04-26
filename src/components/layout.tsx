@@ -14,7 +14,7 @@ export default function Layout(props: Props) {
   const { children, title, showBanner, showContact, introText } = props;
 
   return (
-    <div className="grid grid-rows-[min-content_1fr_min-content] grid-cols-1 gap-24 mx-auto max-w-4xl px-8 sm:px-12 py-8 h-full min-h-screen text-slate-700 ">
+    <div className="grid grid-rows-[min-content_1fr_min-content] grid-cols-1 gap-24 mx-auto max-w-4xl px-8 sm:px-12 py-8 h-full min-h-screen text-slate-700 font-sans font-medium">
       {showBanner && (
         <motion.div
           animate={{ translateX: [0, 30, 0], translateY: [0, 30, 0] }}
