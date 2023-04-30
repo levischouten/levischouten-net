@@ -66,7 +66,7 @@ fi
 
 And voila! The script was complete. I learned a lot about bash scripting by building this simple script, and it has definitely opened up the doors for me to start automating many more tasks using bash. If you're interested in seeing that process, be sure to keep an eye out for this [blog](https://www.levischouten.net/blogs), or follow me on [Twitter](https://twitter.com/levischoute), where I'll be posting about my future findings.
 
-Thank you for taking the time to read about my experience. I hope this post has been helpful to any developers out there who, like me, may be hesitant to dip their toes into bash scripting.
+Thank you for taking the time to read about my experience. I hope this post has been helpful to any developers out there who, like me, may be hesitant to dip their toes into bash scripting. Feel free to reach out if you have any questions or if you room for improvement, I am always eager to learn!
 
 Source code: [Github](https://github.com/levischouten/levischouten-net/blob/main/scripts/create-blog.sh)
 
