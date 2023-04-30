@@ -19,8 +19,8 @@ export default function Footer(props: Props) {
         {showContact && (
           <div className="grid grid-cols-1 mx-auto max-w-sm gap-4">
             <p className="text-center text-lg font-medium">
-              Mollit incididunt ex proident amet velit fugiat magna occaecat et
-              id aliquip.
+              Don&apos;t hesitate to reach out! Let&apos;s see if we can help
+              each other out.
             </p>
             <button className="px-4 py-2 rounded-sm mx-auto text-white bg-blue-500">
               Contact me

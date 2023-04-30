@@ -12,6 +12,7 @@ export default function Blogs({
   return (
     <Layout
       showBanner
+      showContact
       title="Levi Schouten | Blogs"
       introText="I love sharing my tech knowledge and experience! Here, you'll find articles and tutorials on everything from front-end to back-end development."
     >
