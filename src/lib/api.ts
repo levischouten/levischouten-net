@@ -28,25 +28,19 @@ export function getBlogBySlug<T extends Array<keyof Blog>>(
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  const items = {} as any;
-
   // Ensure only the minimal needed data is exposed
-  fields.forEach((field) => {
-    if (field === "slug") {
-      items[field] = realSlug;
+  return fields.reduce<Record<string, unknown>>((prev, curr) => {
+    if (curr === "slug") {
+      prev[curr] = realSlug;
     }
-    if (field === "content") {
-      items[field] = content;
+    if (curr === "content") {
+      prev[curr] = content;
     }
-
-    if (typeof data[field] !== "undefined") {
-      items[field] = data[field];
+    if (typeof data[curr] !== "undefined") {
+      prev[curr] = data[curr];
     }
-  });
-
-  return items as {
-    [K in T[number]]: string;
-  };
+    return prev;
+  }, {}) as Record<T[number], string>;
 }
 
 export function getAllBlogs<T extends Array<keyof Blog>>(fields: T) {
