@@ -22,12 +22,12 @@ export default function Footer(props: Props) {
               Don&apos;t hesitate to reach out! Let&apos;s see if we can help
               each other out.
             </p>
-            <button className="px-4 py-2 rounded-sm mx-auto text-white bg-blue-500">
+            <button className="px-4 py-2 rounded-sm mx-auto text-white bg-blue-600">
               Contact me
             </button>
           </div>
         )}
-        <div className="grid grid-rows-3 sm:grid-rows-2 grid-flow-col gap-x-8 m-auto">
+        <div className="grid grid-rows-3 sm:grid-rows-2 grid-flow-col gap-8 m-auto">
           <Link href="resources" target="_blank">
             Resources
           </Link>

@@ -25,6 +25,12 @@ export default function Header(props: Props) {
     <>
       <Head>
         <title>{title || "Levi Schouten"}</title>
+        <meta
+          name="description"
+          content="Experienced Full-Stack Software Developer. Explore my portfolio and
+          achievements in software development and technology. Let's
+          collaborate on innovative solutions."
+        />
       </Head>
       <header className="grid grid-cols-1 gap-24">
         <div className="flex sm:justify-end justify-center">

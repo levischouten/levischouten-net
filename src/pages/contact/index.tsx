@@ -39,7 +39,7 @@ export default function Contact() {
         />
 
         <button
-          className="px-8 py-4 bg-blue-500 text-white rounded-md"
+          className="px-8 py-4 bg-blue-600 text-white rounded-md"
           type="submit"
           onClick={(e) => e.preventDefault()}
         >
